@@ -11,20 +11,21 @@ let currentConsumptionChart = new Chart(currentConsumption, {
         label: "Current Consumption",
         data: [28, 28, 60, 49, 70, 27],
         tension: 0.4,
-        borderColor: "blue",
-        backgroundColor: "blue",
+        borderColor: "#63a4c9",
+        backgroundColor: "#63a4c9",
       },
     ],
   },
   options: {
     responsive: true,
+    maintainAspectRatio:false,
     plugins: {
       legend: {
         display: false,
         position: "top",
       },
       title: {
-        display: true,
+        display: false,
         text: "Current Consumption",
         font: {
             size: 22
@@ -64,20 +65,21 @@ let temperatureTrendChart = new Chart(temperatureTrend, {
         label: "Temperature Trend",
         data: [48, 48, 85, 59, 95, 40],
         tension: 0.4,
-        borderColor: "blue",
-        backgroundColor: "blue",
+        borderColor: "#63a4c9",
+        backgroundColor: "#63a4c9",
       },
     ],
   },
   options: {
     responsive: true,
+    maintainAspectRatio:false,
     plugins: {
       legend: {
         display: false,
         position: "top",
       },
       title: {
-        display: true,
+        display: false,
         text: "Temperature Trend",
         font: {
             size: 22
@@ -118,26 +120,27 @@ let avgTemperatureChart = new Chart(avgTemperature, {
         label: "Avg. current",
         data: [28, 28, 60, 49, 70, 27],
         tension: 0.4,
-        borderColor: "blue",
-        backgroundColor: "blue",
+        borderColor: "#4f98c3",
+        backgroundColor: "#4f98c3",
       },
       {
         label: "Temperature",
         data: [48, 48, 85, 59, 95, 40],
-        borderColor: "red",
-        backgroundColor: "red",
+        borderColor: "#ff0000",
+        backgroundColor: "#ff0000",
       },
     ],
   },
   options: {
     responsive: true,
+    maintainAspectRatio:false,
     plugins: {
       legend: {
         display: true,
         position: "top",
       },
       title: {
-        display: true,
+        display: false,
         text: "Avg. Temperature vs Current",
         font: {
             size: 22
@@ -168,7 +171,7 @@ const temperature = document
           label: "temperature",
           data: [70,30],
          
-           backgroundColor:["red","grey"],
+           backgroundColor:["#ff0000","#e5e5e5"],
         },
       ],
     },
@@ -176,16 +179,18 @@ const temperature = document
       circumference: 300,
       rotation: 210,
       responsive: true,
+      maintainAspectRatio:false,
       plugins: {
         legend: {
           display: false,
           position: "top",
         },
         title: {
-          display: false,
-          text: "temperature",
-          font: {
-              size: 12
+          display: true,
+          text: 70,
+          position:"bottom",
+          font: {weight: 'bold',
+              size:20
           }
         },
       }
@@ -208,7 +213,7 @@ const temperature = document
         {
           label: "Current",
           data: [70,30],
-          backgroundColor:["aqua","grey"],
+          backgroundColor:["#00ffff","#e5e5e5"],
         
         },
       ],
@@ -217,16 +222,18 @@ const temperature = document
       circumference: 300,
       rotation: 210,
       responsive: true,
+      maintainAspectRatio:false,
       plugins: {
         legend: {
           display: false,
           position: "top",
         },
         title: {
-          display: false,
-          text: "Current",
-          font: {
-              size: 12
+          display: true,
+          text: 70,
+          position:"bottom",
+          font: {weight: 'bold',
+              size:20
           }
         },
       }

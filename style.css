@@ -1,24 +1,115 @@
 
-.currentConsumption {
-    height:40vh ;
-}
+body {
+  background-color: #c7d8e6;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 
+}
+.main {
+  background-color: #c7d8e6;
+}
+.company-toplogo{
+  background-color:#205583;
+  margin: 0;
+}
+.top-heading{
+  background-color:#205583;
+  color: black;
+  font-size:3rem ;
+  width: 100%;
+  margin: 0;
+}
+.heading-main{
+  display: flex;
+  background-color:#205583;
+}
 .temperature {
-    height:40vh ;
+  height: 35vh;
+  background-color: white;
+  border-radius: 1.25rem;
+  border: 1px solid #63a4c9;
+}
+.temp-canvasdiv {
+  height: 22vh;
+}
+.temp-heading {
+  margin: 0;
+}
+.current {
+  height: 35vh;height: 35vh;
+  background-color: white;
+  border-radius: 1.25rem;
+  border: 1px solid #63a4c9;
+}
+.current-canvasdiv {
+  height: 22vh;
 }
 
-.current {
-    height:40vh ;
+.currentConsumption {
+  height: 35vh;
+  background-color: white;
+  border-radius: 1.25rem;
+  border: 1px solid #63a4c9;
+}
+.currentConsumption-canvasdiv {
+  height: 24vh;
+}
+.ccheading-div {
+  text-align: center;
+  height: 2.066rem;
+}
+.cc-select {
+  background-color: #6c757d;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: .5rem;
+  padding: 0.3125rem .5rem;
+  
+}
+.ccheading {
+  font-size: 1.50rem;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .alert {
-    height:40vh ;
+  height: 35vh;
+  background-color: white;
+  border-radius: 1.25rem !important;
+  border: 1px solid #63a4c9 !important;
 }
+.body-main{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: .8rem;
+}
+.body-text{
+  
+  display: flex;
+   justify-content: space-around;
+  font-size: .5rem;  overflow: scroll;}
 
-.avgTemperature {
-    height:40vh ;
-}
+
+
 
 .temperatureTrend {
-    height:40vh ;
+  height: 35vh;
+  background-color: white;
+  border-radius: 1.25rem;
+  border: 1px solid #63a4c9;
+}
+.tempTrend-canvasdiv {
+  height: 24vh;
+}
+.avgTemperature {
+  height: 35vh;
+  background-color: white;
+  border-radius: 1.25rem;
+  border: 1px solid #63a4c9;
+}
+.avgtemp-canvasdiv {
+  height: 24vh;
 }
