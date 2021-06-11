@@ -17,11 +17,13 @@
   <body>
     <div class="container-fluid main">
       <div class="row">
-        <div class="col-5 col-sm-12 col-md-3 col-lg-3 company-toplogo">
-          <div class="company-toplogo"><img src="./Untitled.png" alt="company image"></div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3 company-toplogo">
+          <div class="company-toplogo">
+            <img src="./Untitled.png" alt="company image" />
+          </div>
         </div>
-        <div class="col-5 col-sm-12 col-md-9 col-lg-9 top-heading">
-        <div class="top-heading"> Freezer Temperature Monitoring System</div>
+        <div class="col-12 col-sm-12 col-md-9 col-lg-9 top-heading">
+          <div class="top-heading">Freezer Temperature Monitoring System</div>
         </div>
       </div>
       <div class="row px-3">
@@ -35,73 +37,157 @@
         </div>
       </div>
       <div class="row px-3">
-        <div class="col-5 col-sm-5 col-md-4 col-lg-2 shadow p-3 mb-2 mt-2 me-2 bg-body temperature">
-         <div class="ccheading-div"><span class="ccheading text-center">Temperature</span></div>
-          <hr style="margin: 10px;">
+        <div
+          class="
+            col-12 col-sm-5 col-md-4 col-lg-2
+            shadow
+            p-3
+            mb-2
+            mt-2
+            me-2
+            bg-body
+            temperature
+          "
+        >
+          <div class="ccheading-div">
+            <span class="ccheading text-center">Temperature</span>
+          </div>
+          <hr style="margin: 10px" />
           <div class="temp-canvasdiv"><canvas id="temperature"></canvas></div>
           <!-- <div class="text-center"><span style="font-size: 4rem;">70</span></div> -->
         </div>
-        <div class="col-5 col-sm-5 col-md-4 col-lg-2 shadow p-3 mb-2 mt-2 me-2 bg-body current">
-        <div class="ccheading-div"><span class="ccheading text-center">Current</span></div>
-          <hr style="margin: 10px;">
+        <div
+          class="
+            col-12 col-sm-5 col-md-4 col-lg-2
+            shadow
+            p-3
+            mb-2
+            mt-2
+            me-2
+            bg-body
+            current
+          "
+        >
+          <div class="ccheading-div">
+            <span class="ccheading text-center">Current</span>
+          </div>
+          <hr style="margin: 10px" />
           <div class="current-canvasdiv"><canvas id="current"></canvas></div>
-          
         </div>
-        <div class="col-10 col-sm-10 col-md-7 col-lg-5 shadow p-3 mb-2 mt-2 me-2 bg-body currentConsumption">
-            <div class="ccheading-div"> <span class="ccheading">Current Consumption</span> <select class="cc-select" aria-label="Default select example">
+        <div
+          class="
+            col-12 col-sm-10 col-md-7 col-lg-5
+            shadow
+            p-3
+            mb-2
+            mt-2
+            me-2
+            bg-body
+            currentConsumption
+          "
+        >
+          <div class="ccheading-div">
+            <span class="ccheading">Current Consumption</span>
+            <select class="cc-select" aria-label="Default select example">
               <option selected>10 min</option>
               <option value="1">20 min</option>
               <option value="2">30 min</option>
               <option value="3">1 hour</option>
-            </select></div>
-            <hr style="margin: 10px;">
-          <div class="currentConsumption-canvasdiv"><canvas id="currentConsumption"></canvas></div>
+            </select>
+          </div>
+          <hr style="margin: 10px" />
+          <div class="currentConsumption-canvasdiv">
+            <canvas id="currentConsumption"></canvas>
+          </div>
         </div>
-       
-        <div class="col-5 col-sm-5 col-md-4 col-lg-2 shadow p-3 mb-2 mt-2 me-2 alert">
-       <div class="ccheading-div"><span class="ccheading text-center">Alert</span></div>
-          <hr style="margin: 10px;">
-          <div style="height: 24vh;">
-            <div style="height: 2vh;" class="body-main">
+
+        <div
+          class="
+            col-12 col-sm-5 col-md-4 col-lg-2
+            shadow
+            p-3
+            mb-2
+            mt-2
+            me-2
+            alert
+          "
+        >
+          <div class="ccheading-div">
+            <span class="ccheading text-center">Alert</span>
+          </div>
+          <hr style="margin: 10px" />
+          <div style="height: 24vh">
+            <div style="height: 2vh" class="body-main">
               <div><span>Date</span></div>
               <div><span>Events</span></div>
             </div>
-            <hr>
-            <div class="body-text" style="height: 15vh;">
-              <div >
-                <p>12 May 2020 <br>at 14:00hrs</p>
-                <p>9 May 2020 <br>at 18:20hrs</p>
+            <hr />
+            <div class="body-text" style="height: 15vh">
+              <div>
+                <p>12 May 2020 <br />at 14:00hrs</p>
+                <p>9 May 2020 <br />at 18:20hrs</p>
               </div>
               <div>
-                <p>Door Opened <br><br></p>
-                <p>Temperature <br>crossed limit</p>
+                <p>Door Opened <br /><br /></p>
+                <p>Temperature <br />crossed limit</p>
               </div>
             </div>
           </div>
         </div>
-
       </div>
       <div class="row px-3">
-        <div class="col-10 col-sm-10 col-md-5 col-lg-5 shadow p-3 mb-2 mt-2 me-2 bg-body temperatureTrend">
-          <div class="ccheading-div"> <span class="ccheading">Temperature Trend</span> <select class="cc-select" aria-label="Default select example">
-            <option selected>10 min</option>
-            <option value="1">20 min</option>
-            <option value="2">30 min</option>
-            <option value="3">1 hour</option>
-          </select></div>
-          <hr style="margin: 10px;">
-        <div class="tempTrend-canvasdiv"><canvas id="temperatureTrend"></canvas></div>
-      </div>
-        <div class="col-10 col-sm-10 col-md-6 col-lg-5 shadow p-3 mb-2 mt-2 me-2 bg-body avgTemperature">
-          <div class="ccheading-div"> <span class="ccheading">Avg.Temperature vs Current</span> <select class="cc-select" aria-label="Default select example">
-            <option selected>10 min</option>
-            <option value="1">20 min</option>
-            <option value="2">30 min</option>
-            <option value="3">1 hour</option>
-          </select></div>
-          <hr style="margin: 10px;">
-        <div class="avgtemp-canvasdiv"><canvas id="avgTemperature"></canvas></div>
-      </div>
+        <div
+          class="
+            col-12 col-sm-10 col-md-5 col-lg-5
+            shadow
+            p-3
+            mb-2
+            mt-2
+            me-2
+            bg-body
+            temperatureTrend
+          "
+        >
+          <div class="ccheading-div">
+            <span class="ccheading">Temperature Trend</span>
+            <select class="cc-select" aria-label="Default select example">
+              <option selected>10 min</option>
+              <option value="1">20 min</option>
+              <option value="2">30 min</option>
+              <option value="3">1 hour</option>
+            </select>
+          </div>
+          <hr style="margin: 10px" />
+          <div class="tempTrend-canvasdiv">
+            <canvas id="temperatureTrend"></canvas>
+          </div>
+        </div>
+        <div
+          class="
+            col-12 col-sm-10 col-md-6 col-lg-5
+            shadow
+            p-3
+            mb-2
+            mt-2
+            me-2
+            bg-body
+            avgTemperature
+          "
+        >
+          <div class="ccheading-div">
+            <span class="ccheading">Avg.Temperature vs Current</span>
+            <select class="cc-select" aria-label="Default select example">
+              <option selected>10 min</option>
+              <option value="1">20 min</option>
+              <option value="2">30 min</option>
+              <option value="3">1 hour</option>
+            </select>
+          </div>
+          <hr style="margin: 10px" />
+          <div class="avgtemp-canvasdiv">
+            <canvas id="avgTemperature"></canvas>
+          </div>
+        </div>
       </div>
     </div>
     <script src="script.js"></script>
